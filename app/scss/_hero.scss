@@ -1,91 +1,18 @@
-.hero {
-  height: 100vh;
-  color: $clr-dawn-pink;
+h1 {
+   padding-top: 15rem; 
+}
 
-  &__container {
-    box-sizing: border-box;
-    text-align: center;
-    height: 92vh;
-    width: 100%;
-    background-image: url("../../images/Team-for-Selvmordsforebyggelse-baggrund.svg");
-    background-position: top 44% center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 7.4rem;
+.phero {
+    padding-top: 7rem;
+}
 
-    @include breakpoint-up(ipad) {
-      background-position: center center;
-      padding-bottom: 5rem;
-    }
+.arrowhero {
+    padding-top: 15rem;
 
-    @include breakpoint-up(computer) {
-      text-align: unset;
-      justify-content: center;
-      padding-top: 8rem;
-      background-size: 45% auto;
-      background-position: right 70%;
-      padding-bottom: unset;
-    }
+}
 
-    p:last-of-type {
-      margin-bottom: 3rem;
-      @include breakpoint-up(ipad) {
-        margin-bottom: 5rem;
-      }
-    }
-    a {
-      &:hover {
-        opacity: 0.8;
-      }
-
-      @include breakpoint-up(computer) {
-        margin: unset;
-        font-size: $font-sm-fallback;
-        font-size: $font-sm;
-      }
-    }
-  }
-  &__title {
-    padding-top: 3rem;
-    width: 100%;
-
-    @include breakpoint-up(ipad) {
-      padding-top: 5rem;
-    }
-  }
-
-  &__content {
-    width: 100%;
-
-    @include breakpoint-up(computer) {
-      > * {
-        max-width: 50%;
-      }
-    }
-
-    a::before {
-      display: none;
-    }
-  }
-  &__scroll {
-    background-color: $clr-white;
-    height: 8vh;
-
-    a {
-      display: block;
-      background-image: url("../../images/icons/arrow-down.svg");
-      background-repeat: no-repeat;
-      background-size: 50% 50%;
-      background-position: center;
-      width: 3.5rem;
-      height: 3.5rem;
-      background-color: #e9e9e9;
-      border-radius: 50%;
-      transition: $transition-200ms;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
+.yellowheader {
+    height: 25%;
+    z-index: -1;
+    background-color: $clr-yellow;
 }

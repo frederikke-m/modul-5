@@ -1,209 +1,241 @@
-@viewport {
-  orientation: portrait;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
+/* Generel */ 
 html {
-  scroll-behavior: smooth;
-  background-color: $clr-solid-pink;
-  font-size: 62.5%;
-  font-family: interstate, sans-serif;
-  letter-spacing: 1.2px;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: "Quicksand", sans-serif;
 }
 
-// Typography
-strong {
-  display: block;
+body {
+    background-color: $clr-white;
 }
+
+text {
+    pointer-events: none;
+}
+
+/* Typografi */ 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 p {
-  font-size: $font-xs-fallback;
-  font-size: $font-xs;
-  line-height: 1.5;
+    font-family: "Spartan MB", sans-serif;
+    font-size: $font-p-iphone-fallback;
+    font-size: $font-p-iphone;
+    line-height: 2rem;
+    
+    @include breakpoint-up(ipad) {
+        font-size: $font-p-ipad-fallback;
+        font-size: $font-p-ipad;
+    }
+    
+    @include breakpoint-up(computer) {
+        font-size: $font-p-computer-fallback;
+        font-size: $font-p-computer;
+    }
+}
 
-  @include breakpoint-up(computer) {
-    font-size: $font-sm-fallback;
-    font-size: $font-sm;
-  }
+h1, h2, h3, h5 {
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 2.7;
+    line-height: 9.5rem;
+}
+
+h4 {
+    font-family: "Spartan MB", sans-serif;
 }
 
 h1 {
-  font-size: $font-l-fallback;
-  font-size: $font-l;
-  font-weight: 500;
-  margin-bottom: 5rem;
+    font-size: $font-h1-iphone-fallback;
+    font-size: $font-h1-iphone;
 
-  @include breakpoint-up(computer) {
-    font-size: $font-xl-fallback;
-    font-size: $font-xl;
-  }
+    @include breakpoint-up(ipad) {
+        font-size: $font-h1-ipad-fallback;
+        font-size: $font-h1-ipad;
+    }
+    
+    @include breakpoint-up(computer) {
+        font-size: $font-h1-computer-fallback;
+        font-size: $font-h1-computer;
+    }
 }
 
 h2 {
-  font-weight: 500;
-  font-size: $font-med-fallback;
-  font-size: $font-med;
-  margin-bottom: 2rem;
+    font-size: $font-h2-iphone-fallback;
+    font-size: $font-h2-iphone;
 
-  @include breakpoint-up(computer) {
-    font-size: 35px;
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
-  }
+    @include breakpoint-up(ipad) {
+        font-size: $font-h2-ipad-fallback;
+        font-size: $font-h2-ipad;
+    }
+    
+    @include breakpoint-up(computer) {
+        font-size: $font-h2-computer-fallback;
+        font-size: $font-h2-computer;
+    }
 }
+
 h3 {
-  font-weight: 500;
-  font-size: 20px;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+    font-size: $font-h3-iphone-fallback;
+    font-size: $font-h3-iphone;
 
-  @include breakpoint-up(computer) {
-    margin-bottom: 3rem;
-    font-size: $font-med-fallback;
-    font-size: $font-med;
-  }
-}
-
-// Buttons
-
-.cta-secondary {
-  background-color: $clr-solid-pink;
-  padding: 1.1rem 2.4rem;
-  border-radius: 24px;
-  color: $clr-dawn-pink;
-  width: max-content;
-  margin: 0 auto;
-  font-size: $font-sm-fallback;
-  font-size: $font-sm;
-
-  &--outline {
-    color: $clr-dawn-pink;
-    border: 2px solid $clr-dawn-pink;
-    display: none;
-    transition: $transition-200ms;
-
-    &:hover {
-      background-color: $clr-dawn-pink;
-      color: $clr-text;
-
-      &::before {
-        background-image: url("../../images/icons/phone-black.svg");
-      }
+    @include breakpoint-up(ipad) {
+        font-size: $font-h3-ipad-fallback;
+        font-size: $font-h3-ipad;
     }
-
+    
     @include breakpoint-up(computer) {
-      display: flex;
+        font-size: $font-h3-computer-fallback;
+        font-size: $font-h3-computer;
     }
-  }
-
-  &::before {
-    display: block;
-    content: "";
-    background-image: url("../../images/icons/phone.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 16px;
-    height: 16px;
-    padding-right: 0.5rem;
-  }
-
-  &--white {
-    background-color: $clr-dawn-pink;
-    color: $clr-text;
-    font-weight: 500;
-    transition: $transition-200ms;
-
-    &::before {
-      background-image: url("../../images/icons/phone-black.svg");
-      padding-right: 1rem;
-      transition: $transition-200ms;
-    }
-  }
 }
 
-// Spacing
+h4 {
+    font-size: $font-h4-iphone-fallback;
+    font-size: $font-h4-iphone;
+
+    @include breakpoint-up(ipad) {
+        font-size: $font-h4-ipad-fallback;
+        font-size: $font-h4-ipad;
+    }
+    
+    @include breakpoint-up(computer) {
+        font-size: $font-h4-computer-fallback;
+        font-size: $font-h4-computer;
+    }
+}
+
+h5 {
+    font-size: $font-h5-iphone-fallback;
+    font-size: $font-h5-iphone;
+
+    @include breakpoint-up(ipad) {
+        font-size: $font-h5-ipad-fallback;
+        font-size: $font-h5-ipad;
+    }
+    
+    @include breakpoint-up(computer) {
+        font-size: $font-h5-computer-fallback;
+        font-size: $font-h5-computer;
+    }
+}
+
+
+/* Afstande */ 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  &--pall {
-    padding-top: 3rem;
-    padding-right: 2.4rem;
-    padding-bottom: 3rem;
-    padding-left: 2.4rem;
+    max-width: 1400px;
+    margin: 0 auto;
 
-    @include breakpoint-up(computer) {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-      padding-left: 6rem;
-      padding-right: 6rem;
-    }
+    &--pall {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    
+        @include breakpoint-up(ipad) {
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+          padding-left: 3.2rem;
+          padding-right: 3.2rem;
+        }
+    
+        @include breakpoint-up(computer) {
+          padding-left: 6rem;
+          padding-right: 6rem;
+        }
+      }
+    
+      &--py {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    
+        @include breakpoint-up(ipad) {
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+        }
+      }
+    
+      &--px {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    
+        @include breakpoint-up(ipad) {
+          padding-left: 3.2rem;
+          padding-right: 3.2rem;
+        }
+    
+        @include breakpoint-up(computer) {
+          padding-left: 6rem;
+          padding-right: 6rem;
+        }
+      }
+    
+      &--main {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    
+        @include breakpoint-up(ipad) {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+        @include breakpoint-up(computer) {
+          padding-top: 10rem;
+          padding-bottom: 10rem;
+        }
+      }
   }
 
-  &--py {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-    @include breakpoint-up(computer) {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
-  }
-  &--px {
-    padding-right: 2.4rem;
-    padding-left: 2.4rem;
-  }
-  &--section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    @include breakpoint-up(computer) {
-      padding-top: 14rem;
-      padding-bottom: 14rem;
-    }
-  }
-}
-
-// Flexbox
+/* Flexbox */
 .flex {
-  display: flex;
-
-  &-dr-cl {
-    flex-direction: column;
+    display: flex;
+  
+    &-dr-cl {
+      flex-direction: column;
+    }
+    &-jc-sb {
+      justify-content: space-between;
+    }
+  
+    &-jc-c {
+      justify-content: center;
+    }
+  
+    &-ai-c {
+      align-items: center;
+    }
+  
+    &-ai-st {
+      align-items: flex-start;
+    }
   }
-  &-jc-sb {
-    justify-content: space-between;
+
+/* Grid */ 
+.grid {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+  
+    &-center {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  &-jc-c {
-    justify-content: center;
-  }
-
-  &-ai-c {
-    align-items: center;
-  }
-
-  &-ai-st {
-    align-items: flex-start;
-  }
-}
-
-// Visibility
+/* Synlighed */ 
 .hide-for-mobile {
-  @include breakpoint-down(ipad) {
-    display: none;
+    @include breakpoint-down(ipad) {
+      display: none;
+    }
   }
-}
 
 .hide-for-desktop {
-  @include breakpoint-up(computer) {
-    display: none;
+    @include breakpoint-up(computer) {
+      display: none;
+    }
   }
-}
+
+
+
