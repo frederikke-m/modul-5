@@ -304,8 +304,9 @@ h1 {
 }
 
 .yellowheader {
-  height: 25%;
-  z-index: -1;
   background-color: #F0C800;
+  height: 63%;
+  z-index: -1;
+  margin-top: -46rem;
 }
 /*# sourceMappingURL=style.css.map */
