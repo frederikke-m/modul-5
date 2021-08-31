@@ -1,6 +1,6 @@
 nav {
     a {
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-bottom: 2rem;
     }
 }
@@ -11,3 +11,11 @@ hr {
     background-color: $clr-black;
     height: 0.3em;
 }
+
+.hide-for-desktop {
+    background-color: $clr-white;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
