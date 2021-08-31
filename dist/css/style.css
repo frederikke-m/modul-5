@@ -191,7 +191,7 @@ h5 {
 
 @media (min-width: 40em) {
   .container--py {
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 5rem;
   }
 }
@@ -477,5 +477,10 @@ footer h4 {
 
 footer div {
   width: 50%;
+}
+
+footer svg {
+  height: 4rem;
+  width: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
