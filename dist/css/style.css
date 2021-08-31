@@ -155,8 +155,8 @@ h5 {
 }
 
 .container--pall {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
 }
@@ -308,5 +308,39 @@ header .yellowheader {
   height: 63%;
   z-index: -1;
   margin-top: -46rem;
+}
+
+main {
+  padding-top: 6rem;
+}
+
+main section div {
+  background-color: #141414;
+}
+
+main section div h2, main section div p {
+  color: #fafafa;
+  padding-top: 2rem;
+}
+
+main section div p:last-child {
+  padding-bottom: 4rem;
+}
+
+main section h4 {
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  color: #E63228;
+}
+
+main section p {
+  padding-bottom: 1rem;
+  color: #146EAA;
+}
+
+main hr {
+  width: 100%;
+  height: .15rem;
+  color: #141414;
 }
 /*# sourceMappingURL=style.css.map */
