@@ -139,10 +139,10 @@ h5 {
         padding-left: 2.4rem;
     
         @include breakpoint-up(ipad) {
-          padding-top: 5rem;
-          padding-bottom: 5rem;
-          padding-left: 3.2rem;
-          padding-right: 3.2rem;
+          padding-top: 20rem;
+          padding-bottom: 20rem;
+          padding-left: 6rem;
+          padding-right: 6rem;
         }
     
         @include breakpoint-up(computer) {
@@ -166,8 +166,8 @@ h5 {
         padding-left: 2.4rem;
     
         @include breakpoint-up(ipad) {
-          padding-left: 3.2rem;
-          padding-right: 3.2rem;
+          padding-left: 6rem;
+          padding-right: 6rem;
         }
     
         @include breakpoint-up(computer) {
@@ -231,7 +231,7 @@ h5 {
 
 /* Synlighed */ 
 .hide-for-mobile {
-    @include breakpoint-down(ipad) {
+    @include breakpoint-down(iphone) {
       display: none;
     }
   }

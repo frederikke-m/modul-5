@@ -17,7 +17,7 @@ hr {
     height: 0.3em;
 
     @include breakpoint-up(ipad) {
-        width: 92%;
+        width: 85%;
         height: 0.5rem;
     }
 }

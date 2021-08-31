@@ -170,10 +170,10 @@ h5 {
 
 @media (min-width: 40em) {
   .container--pall {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -203,8 +203,8 @@ h5 {
 
 @media (min-width: 40em) {
   .container--px {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -274,7 +274,7 @@ h5 {
 }
 
 /* Synlighed */
-@media (max-width: 63.9375em) {
+@media (max-width: 39.9375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -307,7 +307,7 @@ hr {
 
 @media (min-width: 40em) {
   hr {
-    width: 92%;
+    width: 85%;
     height: 0.5rem;
   }
 }
@@ -381,10 +381,23 @@ main section div p:last-child {
   padding-bottom: 4rem;
 }
 
+@media (min-width: 40em) {
+  main section div p:last-child {
+    padding-bottom: 9rem;
+  }
+}
+
 main section h4 {
   padding-bottom: 1rem;
   padding-top: 3rem;
   color: #E63228;
+}
+
+@media (min-width: 40em) {
+  main section h4 {
+    padding-bottom: 2.5rem;
+    padding-top: 6rem;
+  }
 }
 
 main section p {
@@ -392,10 +405,17 @@ main section p {
   color: #146EAA;
 }
 
-main .vision {
-  border-bottom: 2rem solid #146EAA;
-  border-right: 2rem solid #146EAA;
-  clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.5%, 0% 20%);
+@media (min-width: 40em) {
+  main section p {
+    padding-bottom: 2.5rem;
+  }
+}
+
+main img {
+  width: 40rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main .person {
@@ -404,10 +424,38 @@ main .person {
   clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.25%, 0% 20%);
 }
 
+@media (min-width: 40em) {
+  main .person {
+    border-bottom: 4rem solid #E63228;
+    border-right: 4rem solid #E63228;
+    clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 96.75%, 0% 20%);
+  }
+}
+
+main .vision {
+  border-bottom: 2rem solid #146EAA;
+  border-right: 2rem solid #146EAA;
+  clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.5%, 0% 20%);
+}
+
+@media (min-width: 40em) {
+  main .vision {
+    border-bottom: 4rem solid #146EAA;
+    border-right: 4rem solid #146EAA;
+    clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 94.5%, 0% 20%);
+  }
+}
+
 main hr {
   width: 100%;
   height: .15rem;
   color: #141414;
+}
+
+@media (min-width: 40em) {
+  main hr {
+    height: .3rem;
+  }
 }
 
 footer {
