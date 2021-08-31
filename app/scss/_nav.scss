@@ -2,6 +2,11 @@ nav {
     a {
         padding-top: 3rem;
         padding-bottom: 2rem;
+
+        @include breakpoint-up(ipad) {
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
     }
 }
 
@@ -10,6 +15,11 @@ hr {
     border: none;
     background-color: $clr-black;
     height: 0.3em;
+
+    @include breakpoint-up(ipad) {
+        width: 92%;
+        height: 0.5rem;
+    }
 }
 
 .hide-for-desktop {
@@ -18,5 +28,9 @@ hr {
     width: 100%;
     padding-bottom: 2rem;
     z-index: 1;
+
+    @include breakpoint-up(ipad) {
+        padding-bottom: 3rem;
+    }
 }
 

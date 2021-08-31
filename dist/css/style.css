@@ -33,6 +33,7 @@ p {
   p {
     font-size: 20px;
     font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -47,6 +48,12 @@ h1, h2, h3, h5 {
   font-family: "League Spartan", sans-serif;
   letter-spacing: 2.7;
   line-height: 9.5rem;
+}
+
+@media (min-width: 40em) {
+  h1, h2, h3, h5 {
+    line-height: 19rem;
+  }
 }
 
 h4 {
@@ -284,11 +291,25 @@ nav a {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 40em) {
+  nav a {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+
 hr {
   width: 87%;
   border: none;
   background-color: #141414;
   height: 0.3em;
+}
+
+@media (min-width: 40em) {
+  hr {
+    width: 92%;
+    height: 0.5rem;
+  }
 }
 
 .hide-for-desktop {
@@ -297,6 +318,12 @@ hr {
   width: 100%;
   padding-bottom: 2rem;
   z-index: 1;
+}
+
+@media (min-width: 40em) {
+  .hide-for-desktop {
+    padding-bottom: 3rem;
+  }
 }
 
 header h1 {

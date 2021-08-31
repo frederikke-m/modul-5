@@ -28,6 +28,7 @@ p {
     @include breakpoint-up(ipad) {
         font-size: $font-p-ipad-fallback;
         font-size: $font-p-ipad;
+        line-height: 3rem;
     }
     
     @include breakpoint-up(computer) {
@@ -40,6 +41,10 @@ h1, h2, h3, h5 {
     font-family: "League Spartan", sans-serif;
     letter-spacing: 2.7;
     line-height: 9.5rem;
+
+    @include breakpoint-up(ipad) {
+      line-height: 19rem;
+  }
 }
 
 h4 {
