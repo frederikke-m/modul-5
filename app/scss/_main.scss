@@ -13,11 +13,7 @@ main {
             }
     
             background-color: $clr-black;
-            border-bottom: 2rem solid #E63228;
-            border-right: 2rem solid #E63228;
-            clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95%, 0% 20%);
         }
-        
         
         h4 {
             padding-bottom: 1rem;
@@ -29,6 +25,18 @@ main {
             padding-bottom: 1rem;
             color: $clr-blue;
         }
+    }
+
+    .vision {
+        border-bottom: 2rem solid $clr-blue;
+        border-right: 2rem solid $clr-blue;
+        clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.5%, 0% 20%);
+    }
+
+    .person {
+        border-bottom: 2rem solid #E63228;
+        border-right: 2rem solid #E63228;
+        clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.25%, 0% 20%);
     }
 
     hr {
