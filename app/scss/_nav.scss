@@ -1,11 +1,13 @@
+nav {
+    a {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+}
+
 hr {
     width: 87%;
     border: none;
     background-color: $clr-black;
     height: 0.3em;
-}
-
-.anavi {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
 }

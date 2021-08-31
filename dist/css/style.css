@@ -279,6 +279,11 @@ h5 {
   }
 }
 
+nav a {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
 hr {
   width: 87%;
   border: none;
@@ -286,24 +291,19 @@ hr {
   height: 0.3em;
 }
 
-.anavi {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-h1 {
+header h1 {
   padding-top: 15rem;
 }
 
-.phero {
+header p {
   padding-top: 7rem;
 }
 
-.arrowhero {
+header .arrowhero {
   padding-top: 15rem;
 }
 
-.yellowheader {
+header .yellowheader {
   background-color: #F0C800;
   height: 63%;
   z-index: -1;

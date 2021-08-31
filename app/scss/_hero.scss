@@ -1,19 +1,21 @@
-h1 {
-   padding-top: 15rem; 
-}
-
-.phero {
-    padding-top: 7rem;
-}
-
-.arrowhero {
-    padding-top: 15rem;
-
-}
-
-.yellowheader {
-    background-color: $clr-yellow;
-    height: 63%;
-    z-index: -1;
-    margin-top: -36rem;
+header {
+    h1 {
+        padding-top: 15rem; 
+     }
+     
+     p {
+         padding-top: 7rem;
+     }
+     
+     .arrowhero {
+         padding-top: 15rem;
+     
+     }
+     
+     .yellowheader {
+         background-color: $clr-yellow;
+         height: 63%;
+         z-index: -1;
+         margin-top: -46rem;
+     }
 }
