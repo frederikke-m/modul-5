@@ -20,7 +20,12 @@ footer {
 
     svg {
         height: 4rem;
-        width: 4rem;
+        width: 3rem;
+
+        @include breakpoint-up(ipad) {
+            height: 4rem;
+            width: 4rem;
+        }
     }
 
 
