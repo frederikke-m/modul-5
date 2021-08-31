@@ -330,6 +330,12 @@ header h1 {
   padding-top: 25rem;
 }
 
+@media (min-width: 40em) {
+  header h1 {
+    padding-top: 30rem;
+  }
+}
+
 header p {
   padding-top: 7rem;
 }
@@ -338,11 +344,24 @@ header .arrowhero {
   padding-top: 15rem;
 }
 
+@media (min-width: 40em) {
+  header .arrowhero {
+    padding-top: 10rem;
+  }
+}
+
 header .yellowheader {
   background-color: #F0C800;
   height: 51.5rem;
   z-index: -1;
   margin-top: -46rem;
+}
+
+@media (min-width: 40em) {
+  header .yellowheader {
+    height: 62.5rem;
+    margin-top: -57rem;
+  }
 }
 
 main {

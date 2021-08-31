@@ -1,6 +1,10 @@
 header {
     h1 {
         padding-top: 25rem; 
+
+        @include breakpoint-up(ipad) {
+            padding-top: 30rem;
+        }
      }
      
      p {
@@ -9,7 +13,10 @@ header {
      
      .arrowhero {
          padding-top: 15rem;
-     
+
+         @include breakpoint-up(ipad) {
+            padding-top: 10rem;
+        }
      }
      
      .yellowheader {
@@ -17,5 +24,10 @@ header {
          height: 51.5rem;
          z-index: -1;
          margin-top: -46rem;
+
+         @include breakpoint-up(ipad) {
+           height: 62.5rem;
+           margin-top: -57rem; 
+        }
      }
 }
