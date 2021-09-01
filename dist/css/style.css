@@ -524,4 +524,17 @@ footer svg {
     width: 4rem;
   }
 }
+
+.projects img {
+  width: 30rem;
+}
+
+.projects img.animation {
+  width: 15rem;
+}
+
+.projects a {
+  text-decoration: underline;
+  color: #E63228;
+}
 /*# sourceMappingURL=style.css.map */
