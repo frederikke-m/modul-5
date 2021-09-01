@@ -7,6 +7,15 @@ nav {
             padding-top: 5rem;
             padding-bottom: 3rem;
         }
+
+        @include breakpoint-up(computer) {
+            padding-top: 0rem;
+            padding-bottom: 3rem;
+        } 
+    }
+
+    @include breakpoint-up(computer) {
+        padding-top: 3rem;       
     }
 }
 
@@ -20,6 +29,10 @@ hr {
         width: 85%;
         height: 0.5rem;
     }
+
+    @include breakpoint-up(computer) {
+        width: 88%;      
+    }
 }
 
 .hide-for-desktop {
@@ -32,5 +45,13 @@ hr {
     @include breakpoint-up(ipad) {
         padding-bottom: 3rem;
     }
+}
+
+.hide-for-mobile {
+    background-color: $clr-white;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 2rem;
+    z-index: 1;
 }
 
