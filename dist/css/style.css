@@ -537,4 +537,12 @@ footer svg {
   text-decoration: underline;
   color: #E63228;
 }
+
+.projects h2 {
+  padding-top: 2rem;
+}
+
+.projects .description {
+  color: #146EAA;
+}
 /*# sourceMappingURL=style.css.map */
