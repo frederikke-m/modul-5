@@ -243,5 +243,11 @@ h5 {
     }
   }
 
+.desktop-nav {
+  @include breakpoint-down(ipad) {
+    display: none;
+  }
+}
+
 
 

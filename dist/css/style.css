@@ -287,6 +287,12 @@ h5 {
   }
 }
 
+@media (max-width: 63.9375em) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
 nav a {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -346,7 +352,7 @@ hr {
   }
 }
 
-.hide-for-mobile {
+.desktop-nav {
   background-color: #fafafa;
   position: fixed;
   width: 100%;
