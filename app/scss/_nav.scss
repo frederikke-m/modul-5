@@ -2,18 +2,18 @@ nav {
     a {
         padding-top: 3rem;
         padding-bottom: 2rem;
-
+        
         @include breakpoint-up(ipad) {
             padding-top: 5rem;
             padding-bottom: 3rem;
         }
-
+        
         @include breakpoint-up(computer) {
             padding-top: 0rem;
             padding-bottom: 3rem;
         } 
     }
-
+    
     @include breakpoint-up(computer) {
         padding-top: 3rem;       
     }
@@ -24,12 +24,12 @@ hr {
     border: none;
     background-color: $clr-black;
     height: 0.3em;
-
+    
     @include breakpoint-up(ipad) {
         width: 85%;
         height: 0.5rem;
     }
-
+    
     @include breakpoint-up(computer) {
         width: 88%;      
     }
@@ -41,7 +41,7 @@ hr {
     width: 100%;
     padding-bottom: 2rem;
     z-index: 1;
-
+    
     @include breakpoint-up(ipad) {
         padding-bottom: 3rem;
     }
@@ -53,5 +53,26 @@ hr {
     width: 100%;
     padding-bottom: 2rem;
     z-index: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $clr-white;
+    min-width: 160px;
+    z-index: 1;
+
+    a {
+        color: $clr-blue;
+    }
+}
+
+.show {
+    display: block;
 }
 

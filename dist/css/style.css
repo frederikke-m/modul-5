@@ -372,6 +372,27 @@ hr {
   z-index: 1;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #146EAA;
+}
+
+.show {
+  display: block;
+}
+
 header h1 {
   padding-top: 25rem;
 }
