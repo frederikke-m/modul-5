@@ -37,14 +37,24 @@ p {
     }
 }
 
-h1, h2, h3, h5 {
+h1 {
     font-family: "League Spartan", sans-serif;
     letter-spacing: 2.7;
-    line-height: 5remrem;
+    line-height: 8rem;
 
     @include breakpoint-up(ipad) {
-      line-height: 19rem;
+      line-height: 20rem;
   }
+}
+
+h2, h3, h5 {
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 2.7;
+  line-height: 5rem;
+
+  @include breakpoint-up(ipad) {
+    line-height: 0rem;
+}
 }
 
 h4 {
@@ -156,7 +166,7 @@ h5 {
         padding-bottom: 2rem;
     
         @include breakpoint-up(ipad) {
-          padding-top: 4rem;
+          padding-top: 10rem;
           padding-bottom: 5rem;
         }
       }

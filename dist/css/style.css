@@ -44,15 +44,27 @@ p {
   }
 }
 
-h1, h2, h3, h5 {
+h1 {
   font-family: "League Spartan", sans-serif;
   letter-spacing: 2.7;
-  line-height: 5remrem;
+  line-height: 8rem;
 }
 
 @media (min-width: 40em) {
-  h1, h2, h3, h5 {
-    line-height: 19rem;
+  h1 {
+    line-height: 20rem;
+  }
+}
+
+h2, h3, h5 {
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 2.7;
+  line-height: 5rem;
+}
+
+@media (min-width: 40em) {
+  h2, h3, h5 {
+    line-height: 0rem;
   }
 }
 
@@ -191,7 +203,7 @@ h5 {
 
 @media (min-width: 40em) {
   .container--py {
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
   }
 }
@@ -394,7 +406,7 @@ header .yellowheader {
 @media (min-width: 40em) {
   header .yellowheader {
     height: 62.5rem;
-    margin-top: -57rem;
+    margin-top: -59rem;
   }
 }
 
@@ -450,6 +462,8 @@ main img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 main .person {
@@ -529,20 +543,63 @@ footer svg {
 
 .projects img {
   width: 30rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.projects img:last-of-type {
+  padding-bottom: 7rem;
+}
+
+@media (min-width: 40em) {
+  .projects img:last-of-type {
+    padding-bottom: 14rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .projects img {
+    width: 60rem;
+    padding-top: 2rem;
+  }
+  .projects img:first-of-type {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .projects img.animation {
-  width: 15rem;
-  padding-bottom: 5rem;
+  width: 17rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 40em) {
+  .projects img.animation {
+    width: 25rem;
+    padding-bottom: 10rem;
+  }
 }
 
 .projects img.animation:last-of-type {
   padding-bottom: 7rem;
+  width: 13rem;
 }
 
-.projects img.animation:first-of-type {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+@media (min-width: 40em) {
+  .projects img.animation:last-of-type {
+    padding-bottom: 14rem;
+    width: 20rem;
+  }
+}
+
+.projects img.tfs {
+  padding-bottom: 3rem;
+}
+
+.projects img.tfsinfo {
+  width: 15rem;
+  padding-bottom: 4rem;
 }
 
 .projects a {
@@ -551,7 +608,23 @@ footer svg {
 }
 
 .projects h2 {
-  padding-top: 2rem;
+  padding-top: 4rem;
+}
+
+@media (min-width: 40em) {
+  .projects h2 {
+    padding-top: 10rem;
+  }
+}
+
+.projects h3 {
+  padding-top: 4rem;
+}
+
+@media (min-width: 40em) {
+  .projects h3 {
+    padding-bottom: 4rem;
+  }
 }
 
 .projects p:not(first-child) {
@@ -560,7 +633,22 @@ footer svg {
 
 .projects .description {
   color: #146EAA;
-  padding-top: 2rem;
   padding-bottom: 4rem;
+}
+
+@media (min-width: 40em) {
+  .projects .description {
+    padding-top: 5rem;
+  }
+}
+
+.projects h5 {
+  padding-top: 4rem;
+}
+
+@media (min-width: 40em) {
+  .projects h5 {
+    padding-top: 10rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
