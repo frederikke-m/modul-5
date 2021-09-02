@@ -59,12 +59,12 @@ h1 {
 h2, h3, h5 {
   font-family: "League Spartan", sans-serif;
   letter-spacing: 2.7;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
 
 @media (min-width: 40em) {
   h2, h3, h5 {
-    line-height: 0rem;
+    line-height: 8rem;
   }
 }
 
@@ -542,9 +542,9 @@ footer svg {
 }
 
 .projects img {
-  width: 30rem;
+  width: 27rem;
   padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-bottom: 4rem;
 }
 
 .projects img:last-of-type {
@@ -554,7 +554,6 @@ footer svg {
 @media (min-width: 40em) {
   .projects img:last-of-type {
     padding-bottom: 14rem;
-    width: 20rem;
   }
 }
 
@@ -562,15 +561,15 @@ footer svg {
   .projects img {
     width: 60rem;
     padding-top: 2rem;
+    padding-bottom: 5rem;
   }
   .projects img:first-of-type {
     padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 }
 
 .projects img.animation {
-  width: 17rem;
+  width: 15rem;
   padding-bottom: 4rem;
 }
 
@@ -583,13 +582,23 @@ footer svg {
 
 .projects img.animation:last-of-type {
   padding-bottom: 7rem;
-  width: 13rem;
+  width: 11rem;
 }
 
 @media (min-width: 40em) {
   .projects img.animation:last-of-type {
     padding-bottom: 14rem;
     width: 20rem;
+  }
+}
+
+.projects img.kip {
+  width: 17rem;
+}
+
+@media (min-width: 40em) {
+  .projects img.kip {
+    width: 25rem;
   }
 }
 
@@ -623,32 +632,36 @@ footer svg {
 
 @media (min-width: 40em) {
   .projects h3 {
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
   }
 }
 
-.projects p:not(first-child) {
-  padding-bottom: 1rem;
+.projects p {
+  padding-bottom: 3rem;
+}
+
+.projects p.last {
+  padding-bottom: 0rem;
+}
+
+@media (min-width: 40em) {
+  .projects p {
+    padding-bottom: 5rem;
+  }
+  .projects p.last {
+    padding-bottom: 1rem;
+  }
 }
 
 .projects .description {
   color: #146EAA;
   padding-bottom: 4rem;
+  padding-top: 1rem;
 }
 
 @media (min-width: 40em) {
   .projects .description {
-    padding-top: 5rem;
-  }
-}
-
-.projects h5 {
-  padding-top: 4rem;
-}
-
-@media (min-width: 40em) {
-  .projects h5 {
-    padding-top: 10rem;
+    padding-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
