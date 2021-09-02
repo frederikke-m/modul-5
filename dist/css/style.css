@@ -47,7 +47,7 @@ p {
 h1, h2, h3, h5 {
   font-family: "League Spartan", sans-serif;
   letter-spacing: 2.7;
-  line-height: 9.5rem;
+  line-height: 5remrem;
 }
 
 @media (min-width: 40em) {
@@ -185,7 +185,7 @@ h5 {
 }
 
 .container--py {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -386,9 +386,9 @@ header .arrowhero {
 
 header .yellowheader {
   background-color: #F0C800;
-  height: 51.5rem;
+  height: 53rem;
   z-index: -1;
-  margin-top: -46rem;
+  margin-top: -44rem;
 }
 
 @media (min-width: 40em) {
@@ -503,6 +503,8 @@ footer h2 {
 
 footer p {
   color: #146EAA;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 footer h4 {

@@ -21,9 +21,9 @@ header {
      
      .yellowheader {
          background-color: $clr-yellow;
-         height: 51.5rem;
+         height: 53rem;
          z-index: -1;
-         margin-top: -46rem;
+         margin-top: -44rem;
 
          @include breakpoint-up(ipad) {
            height: 62.5rem;

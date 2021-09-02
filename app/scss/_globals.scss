@@ -40,7 +40,7 @@ p {
 h1, h2, h3, h5 {
     font-family: "League Spartan", sans-serif;
     letter-spacing: 2.7;
-    line-height: 9.5rem;
+    line-height: 5remrem;
 
     @include breakpoint-up(ipad) {
       line-height: 19rem;
@@ -152,7 +152,7 @@ h5 {
       }
     
       &--py {
-        padding-top: 2rem;
+        padding-top: 4rem;
         padding-bottom: 2rem;
     
         @include breakpoint-up(ipad) {
