@@ -533,6 +533,16 @@ footer svg {
 
 .projects img.animation {
   width: 15rem;
+  padding-bottom: 5rem;
+}
+
+.projects img.animation:last-of-type {
+  padding-bottom: 7rem;
+}
+
+.projects img.animation:first-of-type {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .projects a {
@@ -544,7 +554,13 @@ footer svg {
   padding-top: 2rem;
 }
 
+.projects p:not(first-child) {
+  padding-bottom: 1rem;
+}
+
 .projects .description {
   color: #146EAA;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

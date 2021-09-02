@@ -4,6 +4,16 @@
 
         &.animation {
             width: 15rem;
+            padding-bottom: 5rem;
+
+            &:last-of-type {
+                padding-bottom: 7rem;
+            }
+
+            &:first-of-type {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
         }
     }
 
@@ -16,8 +26,14 @@
         padding-top: 2rem;
     }
 
+    p:not(first-child) {
+        padding-bottom: 1rem;
+    }
+
     .description {
         color: $clr-blue;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
     }
 }
 
