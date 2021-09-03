@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 text {
@@ -355,7 +356,7 @@ hr {
   position: fixed;
   width: 100%;
   padding-bottom: 2rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 40em) {
@@ -372,21 +373,21 @@ hr {
   z-index: 1;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
+.overlay {
+  height: 0;
+  width: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
   background-color: #fafafa;
-  min-width: 160px;
-  z-index: 1;
+  transition: 0.5s;
 }
 
-.dropdown-content a {
-  color: #146EAA;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  display: none;
 }
 
 .show {
