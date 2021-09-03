@@ -394,6 +394,10 @@ hr {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 header h1 {
   padding-top: 25rem;
 }

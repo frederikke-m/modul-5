@@ -9,6 +9,7 @@
 const btnHamburger = document.querySelector("#btnHamburger");
 const overlay = document.querySelector(".overlay")
 const overlayContent = document.querySelector(".overlay-content")
+const btnClose = document.querySelector("#btnClose")
 
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
@@ -27,3 +28,6 @@ function closeNav() {
 }
 
 btnHamburger.addEventListener("click", openNav)
+btnHamburger.addEventListener("click", closeNav)
+
+
