@@ -17,7 +17,11 @@ function openNav() {
   if (overlay.classList.contains("show")) {
     overlay.classList.remove("show")
     overlayContent.classList.remove("show")
+    overlay.classList.add("hidden")
+    overlayContent.classList.add("hidden")
   } else {
+    overlay.classList.remove("hidden")
+    overlayContent.classList.remove("hidden")
     overlay.classList.add("show")
     overlayContent.classList.add("show")
   }

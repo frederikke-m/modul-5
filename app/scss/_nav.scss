@@ -56,13 +56,13 @@ hr {
 }
 
 .overlay {
-    height: 0;
-    width: 0;
+    height: 100%;
     position: fixed;
     left: 0;
     right: 0;
     background-color: $clr-white;
     transition: 0.5s;
+    top: 5rem;
 }
 
 .overlay-content {
