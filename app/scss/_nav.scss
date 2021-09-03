@@ -61,15 +61,23 @@ hr {
     left: 0;
     right: 0;
     background-color: $clr-white;
-    transition: 0.5s;
-    top: 5rem;
+    top: 0rem;
+    z-index: -1;
+    overflow-x: hidden;
 }
 
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
     display: none;
+
+    a {
+        color: $clr-blue;
+
+        &:first-of-type {
+            padding-top: 6rem;
+        }
+    }
 }
 
 .show {
@@ -79,25 +87,4 @@ hr {
 .hidden {
     display: none;
 }
-
-// .dropdown {
-//     position: relative;
-//     display: inline-block;
-// }
-
-// .dropdown-content {
-//     display: none;
-//     position: absolute;
-//     background-color: $clr-white;
-//     min-width: 160px;
-//     z-index: 1;
-
-//     a {
-//         color: $clr-blue;
-//     }
-// }
-
-// .show {
-//     display: block;
-// }
 

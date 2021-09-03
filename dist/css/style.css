@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #fafafa;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 text {
@@ -379,15 +379,23 @@ hr {
   left: 0;
   right: 0;
   background-color: #fafafa;
-  transition: 0.5s;
-  top: 5rem;
+  top: 0rem;
+  z-index: -1;
+  overflow-x: hidden;
 }
 
 .overlay-content {
   position: relative;
   top: 25%;
-  width: 100%;
   display: none;
+}
+
+.overlay-content a {
+  color: #146EAA;
+}
+
+.overlay-content a:first-of-type {
+  padding-top: 6rem;
 }
 
 .show {
