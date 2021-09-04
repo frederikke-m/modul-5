@@ -381,7 +381,6 @@ hr {
   background-color: #fafafa;
   top: 0rem;
   z-index: -1;
-  overflow-x: hidden;
 }
 
 .overlay-content {
@@ -398,12 +397,12 @@ hr {
   padding-top: 6rem;
 }
 
-.show {
-  display: block;
-}
-
 .hidden {
   display: none;
+}
+
+.show {
+  display: block;
 }
 
 header h1 {

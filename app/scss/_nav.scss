@@ -63,7 +63,6 @@ hr {
     background-color: $clr-white;
     top: 0rem;
     z-index: -1;
-    overflow-x: hidden;
 }
 
 .overlay-content {
@@ -80,11 +79,13 @@ hr {
     }
 }
 
+.hidden {
+    display: none;
+}
+
+
 .show {
     display: block;
 }
 
-.hidden {
-    display: none;
-}
 
