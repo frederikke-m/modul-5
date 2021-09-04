@@ -9,7 +9,11 @@ footer {
     p {
         color: $clr-blue;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+
+        @include breakpoint-up(computer) {
+            padding-bottom: 2rem;
+        }
     }
 
     h4 {

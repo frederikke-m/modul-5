@@ -5,17 +5,30 @@ header {
         @include breakpoint-up(ipad) {
             padding-top: 30rem;
         }
-     }
-     
+
+        @include breakpoint-up(computer) {
+            padding-top: 25rem;
+        }
+    }
+
      p {
          padding-top: 7rem;
-     }
+
+         @include breakpoint-up(computer) {
+             padding-top: 0rem;
+         }
+    }  
      
      .arrowhero {
          padding-top: 15rem;
 
          @include breakpoint-up(ipad) {
             padding-top: 25rem;
+        }
+
+        @include breakpoint-up(computer) {
+            width: 2rem;
+            padding-top: 15rem;
         }
      }
      
@@ -28,6 +41,11 @@ header {
          @include breakpoint-up(ipad) {
            height: 62.5rem;
            margin-top: -54rem; 
+        }
+
+        @include breakpoint-up(computer) {
+            height: 47.5rem;
+            margin-top: -34rem;
         }
      }
 }

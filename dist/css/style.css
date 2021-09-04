@@ -25,23 +25,23 @@ a {
 
 p {
   font-family: "Spartan MB", sans-serif;
-  font-size: 12px;
-  font-size: 1.2em;
+  font-size: 10px;
+  font-size: 1em;
   line-height: 2rem;
 }
 
 @media (min-width: 40em) {
   p {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 3rem;
   }
 }
 
 @media (min-width: 64em) {
   p {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 
@@ -85,9 +85,15 @@ h4 {
   font-family: "Spartan MB", sans-serif;
 }
 
+@media (min-width: 64em) {
+  h4 {
+    line-height: 0rem;
+  }
+}
+
 h1 {
-  font-size: 76px;
-  font-size: 7.6em;
+  font-size: 60px;
+  font-size: 6em;
 }
 
 @media (min-width: 40em) {
@@ -99,14 +105,14 @@ h1 {
 
 @media (min-width: 64em) {
   h1 {
-    font-size: 1px;
-    font-size: 15.2rem;
+    font-size: 10px;
+    font-size: 10rem;
   }
 }
 
 h2 {
-  font-size: 30px;
-  font-size: 3em;
+  font-size: 25px;
+  font-size: 2.5em;
 }
 
 @media (min-width: 40em) {
@@ -118,14 +124,14 @@ h2 {
 
 @media (min-width: 64em) {
   h2 {
-    font-size: 60px;
-    font-size: 6rem;
+    font-size: 40px;
+    font-size: 4rem;
   }
 }
 
 h3 {
-  font-size: 22px;
-  font-size: 2.2em;
+  font-size: 2px;
+  font-size: 2em;
 }
 
 @media (min-width: 40em) {
@@ -143,8 +149,8 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
-  font-size: 1.4em;
+  font-size: 12px;
+  font-size: 1.2em;
 }
 
 @media (min-width: 40em) {
@@ -156,8 +162,8 @@ h4 {
 
 @media (min-width: 64em) {
   h4 {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -197,15 +203,15 @@ h5 {
   .container--pall {
     padding-top: 17rem;
     padding-bottom: 17rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
 @media (min-width: 64em) {
   .container--pall {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
 
@@ -228,15 +234,15 @@ h5 {
 
 @media (min-width: 40em) {
   .container--px {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
 @media (min-width: 64em) {
   .container--px {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
 
@@ -340,6 +346,8 @@ nav a {
 @media (min-width: 64em) {
   nav {
     padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -367,6 +375,7 @@ hr {
 @media (min-width: 64em) {
   hr {
     width: 88%;
+    height: 0.3rem;
   }
 }
 
@@ -434,8 +443,20 @@ header h1 {
   }
 }
 
+@media (min-width: 64em) {
+  header h1 {
+    padding-top: 25rem;
+  }
+}
+
 header p {
   padding-top: 7rem;
+}
+
+@media (min-width: 64em) {
+  header p {
+    padding-top: 0rem;
+  }
 }
 
 header .arrowhero {
@@ -445,6 +466,13 @@ header .arrowhero {
 @media (min-width: 40em) {
   header .arrowhero {
     padding-top: 25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  header .arrowhero {
+    width: 2rem;
+    padding-top: 15rem;
   }
 }
 
@@ -459,6 +487,13 @@ header .yellowheader {
   header .yellowheader {
     height: 62.5rem;
     margin-top: -54rem;
+  }
+}
+
+@media (min-width: 64em) {
+  header .yellowheader {
+    height: 47.5rem;
+    margin-top: -34rem;
   }
 }
 
@@ -570,7 +605,13 @@ footer h2 {
 footer p {
   color: #146EAA;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  footer p {
+    padding-bottom: 2rem;
+  }
 }
 
 footer h4 {
@@ -611,7 +652,7 @@ footer svg {
 
 @media (min-width: 40em) {
   .projects img {
-    width: 60rem;
+    width: 57rem;
     padding-top: 2rem;
     padding-bottom: 7rem;
   }
