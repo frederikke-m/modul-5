@@ -17,6 +17,13 @@ nav {
     @include breakpoint-up(computer) {
         padding-top: 3rem;       
     }
+
+    h2 {
+        @include breakpoint-up(ipad) {
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+        }
+    }
 }
 
 hr {

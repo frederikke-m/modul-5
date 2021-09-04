@@ -32,8 +32,8 @@ p {
 
 @media (min-width: 40em) {
   p {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 3rem;
   }
 }
@@ -57,15 +57,27 @@ h1 {
   }
 }
 
-h2, h3, h5 {
+h2 {
   font-family: "League Spartan", sans-serif;
   letter-spacing: 2.7;
   line-height: 4.5rem;
 }
 
 @media (min-width: 40em) {
-  h2, h3, h5 {
-    line-height: 8rem;
+  h2 {
+    line-height: 5.5rem;
+  }
+}
+
+h3, h5 {
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 2.7;
+  line-height: 4.5rem;
+}
+
+@media (min-width: 40em) {
+  h3, h5 {
+    line-height: 0rem;
   }
 }
 
@@ -80,14 +92,14 @@ h1 {
 
 @media (min-width: 40em) {
   h1 {
-    font-size: 152px;
-    font-size: 15.2rem;
+    font-size: 100px;
+    font-size: 10rem;
   }
 }
 
 @media (min-width: 64em) {
   h1 {
-    font-size: 152px;
+    font-size: 1px;
     font-size: 15.2rem;
   }
 }
@@ -99,8 +111,8 @@ h2 {
 
 @media (min-width: 40em) {
   h2 {
-    font-size: 60px;
-    font-size: 6rem;
+    font-size: 40px;
+    font-size: 4rem;
   }
 }
 
@@ -118,8 +130,8 @@ h3 {
 
 @media (min-width: 40em) {
   h3 {
-    font-size: 44px;
-    font-size: 4.4rem;
+    font-size: 30px;
+    font-size: 3rem;
   }
 }
 
@@ -137,8 +149,8 @@ h4 {
 
 @media (min-width: 40em) {
   h4 {
-    font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
@@ -156,8 +168,8 @@ h5 {
 
 @media (min-width: 40em) {
   h5 {
-    font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 
@@ -175,16 +187,16 @@ h5 {
 }
 
 .container--pall {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
 }
 
 @media (min-width: 40em) {
   .container--pall {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -331,6 +343,13 @@ nav a {
   }
 }
 
+@media (min-width: 40em) {
+  nav h2 {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
 hr {
   width: 87%;
   border: none;
@@ -425,7 +444,7 @@ header .arrowhero {
 
 @media (min-width: 40em) {
   header .arrowhero {
-    padding-top: 10rem;
+    padding-top: 25rem;
   }
 }
 
@@ -439,7 +458,7 @@ header .yellowheader {
 @media (min-width: 40em) {
   header .yellowheader {
     height: 62.5rem;
-    margin-top: -59rem;
+    margin-top: -54rem;
   }
 }
 
@@ -551,7 +570,7 @@ footer h2 {
 footer p {
   color: #146EAA;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 footer h4 {
@@ -586,7 +605,7 @@ footer svg {
 
 @media (min-width: 40em) {
   .projects img:last-of-type {
-    padding-bottom: 14rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -594,7 +613,7 @@ footer svg {
   .projects img {
     width: 60rem;
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
   }
   .projects img:first-of-type {
     padding-top: 5rem;
@@ -665,7 +684,7 @@ footer svg {
 
 @media (min-width: 40em) {
   .projects h3 {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -679,10 +698,15 @@ footer svg {
 
 @media (min-width: 40em) {
   .projects p {
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
+    padding-top: 2rem;
   }
   .projects p.last {
     padding-bottom: 1rem;
+  }
+  .projects p:last-of-type {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
 }
 
@@ -695,6 +719,13 @@ footer svg {
 @media (min-width: 40em) {
   .projects .description {
     padding-top: 2rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .projects h5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

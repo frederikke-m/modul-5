@@ -8,14 +8,14 @@
             padding-bottom: 7rem;
 
             @include breakpoint-up(ipad) {
-                padding-bottom: 14rem;
+                padding-bottom: 5rem;
             }
         }
 
         @include breakpoint-up(ipad) {
             width: 60rem;
             padding-top: 2rem;
-            padding-bottom: 5rem;
+            padding-bottom: 7rem;
 
             &:first-of-type {
                 padding-top: 5rem;
@@ -77,7 +77,7 @@
         padding-top: 4rem;
         
         @include breakpoint-up(ipad) {
-            padding-bottom: 1rem;
+            padding-bottom: 2rem;
         }
     }
 
@@ -89,10 +89,16 @@
         }
 
         @include breakpoint-up(ipad) {
-            padding-bottom: 5rem;
+            padding-bottom: 7rem;
+            padding-top: 2rem;
 
             &.last {
                 padding-bottom: 1rem;
+            }
+
+            &:last-of-type {
+                padding-top: 0rem;
+                padding-bottom: 0rem;
             }
         }
     }
@@ -104,6 +110,13 @@
 
         @include breakpoint-up(ipad) {
             padding-top: 2rem;
+        }
+    }
+
+    h5 {
+        @include breakpoint-up(ipad) {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
     }
 }

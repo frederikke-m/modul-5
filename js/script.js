@@ -1,7 +1,6 @@
 const btnHamburger = document.querySelector("#btnHamburger");
 const overlay = document.querySelector(".overlay")
 const overlayContent = document.querySelector(".overlay-content")
-const btnClose = document.querySelector(".closebtn")
 
 btnHamburger.addEventListener("click", function () {
   if (overlay.classList.contains("show")) {
