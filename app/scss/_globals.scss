@@ -1,8 +1,19 @@
 /* Generel */ 
+@font-face {
+  font-family: 'League Spartan';
+  src: url('fonts/LeagueSpartan-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Spartan MB';
+  src: url('fonts/SpartanMB-Regular.otf');
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: "Spartan MB", sans-serif;
+
 }
 
 body {
@@ -39,7 +50,7 @@ p {
 }
 
 h1 {
-    font-family: "League Spartan", sans-serif;
+    font-family: 'League Spartan', sans-serif;
     letter-spacing: 2.7;
     line-height: 8rem;
 
@@ -49,7 +60,7 @@ h1 {
 }
 
 h2 {
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   letter-spacing: 2.7;
   line-height: 4.5rem;
 
@@ -59,7 +70,7 @@ h2 {
 }
 
 h3, h5 {
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   letter-spacing: 2.7;
   line-height: 4.5rem;
 
