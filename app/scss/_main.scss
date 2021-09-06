@@ -28,6 +28,10 @@ main {
                 padding-bottom: 2.5rem;
                 padding-top: 6rem;
             }
+
+            @include breakpoint-up(computer) {
+                padding-bottom: 0rem;
+            }
         }
 
         p {
@@ -47,6 +51,11 @@ main {
         margin-right: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
+
+        @include breakpoint-up(computer) {
+            width: 35rem;
+            padding-top: 0rem;
+        }
     }
 
     .person {
@@ -82,5 +91,10 @@ main {
             height: .3rem;
                 
         }
+    }
+
+    #whatido {
+        padding-bottom: 15rem;
+        padding-top: 10rem;
     }
 }
