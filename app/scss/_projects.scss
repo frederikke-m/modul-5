@@ -88,10 +88,10 @@
     }
 
     h2 {
-        padding-top: 4rem;
+        padding-top: 2rem;
 
         @include breakpoint-up(ipad) {
-            padding-top: 10rem;
+            padding-top: 0rem;
         }
 
         @include breakpoint-up(computer) {

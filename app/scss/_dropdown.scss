@@ -11,8 +11,6 @@
       height: 0;
       overflow: hidden;
       transition: height 0.3s ease-in-out;
-      will-change: height;
-      font-weight: bold;
   
       li {
         a {
@@ -23,7 +21,8 @@
       }
 
       h2 {
-        padding-top: 10rem;
+        padding-top: 11rem;
+        padding-bottom: 2rem;
       }
     }
   

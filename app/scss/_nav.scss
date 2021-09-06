@@ -30,7 +30,15 @@ nav {
     .breadcrumbs {
         column-gap: 1rem;
         padding-bottom: 0rem;
-        padding-top: 7rem;
+        padding-top: 10rem;
+
+        @include breakpoint-up(ipad) {
+            padding-top: 14rem;
+        }
+
+        @include breakpoint-up(computer) {
+            padding-top: 7rem;
+        }
 
         a:hover {
             color: $clr-blue;
