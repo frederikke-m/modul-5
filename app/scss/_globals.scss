@@ -2,7 +2,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Spartan MB", sans-serif;
 }
 
 body {
@@ -44,7 +44,7 @@ h1 {
     line-height: 8rem;
 
     @include breakpoint-up(ipad) {
-      line-height: 20rem;
+      line-height: 12rem;
   }
 }
 
@@ -187,6 +187,7 @@ h5 {
 
         @include breakpoint-up(computer) {
           padding-top: 7rem;
+          padding-bottom: 2rem;
         }
       }
     

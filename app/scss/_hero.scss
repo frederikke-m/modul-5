@@ -15,7 +15,8 @@ header {
          padding-top: 7rem;
 
          @include breakpoint-up(computer) {
-             padding-top: 0rem;
+             padding-top: 4rem;
+             font-size: 1.4rem;
          }
     }  
      
@@ -39,12 +40,12 @@ header {
          margin-top: -44rem;
 
          @include breakpoint-up(ipad) {
-           height: 62.5rem;
-           margin-top: -54rem; 
+           height: 67rem;
+           margin-top: -50rem; 
         }
 
         @include breakpoint-up(computer) {
-            height: 36rem;
+            height: 40rem;
             margin-top: -29rem;
         }
      }

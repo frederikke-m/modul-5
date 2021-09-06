@@ -1,4 +1,6 @@
 .projects {
+    padding: 10rem 30rem 17rem 30rem;
+
     img {
         width: 27rem;
         padding-top: 0rem;
@@ -22,6 +24,10 @@
             }
         }
 
+        @include breakpoint-up(computer) {
+            width: 55rem;
+        }
+
         &.animation {
             width: 15rem;
             padding-bottom: 4rem;
@@ -39,6 +45,14 @@
                     padding-bottom: 14rem;
                     width: 20rem;
                 }
+
+                @include breakpoint-up(computer) {
+                    width: 15rem;
+                }
+            }
+
+            @include breakpoint-up(computer) {
+                width: 20rem;
             }
         }
 
@@ -71,6 +85,10 @@
         @include breakpoint-up(ipad) {
             padding-top: 10rem;
         }
+
+        @include breakpoint-up(computer) {
+            padding-top: 0rem;
+        }
     }
 
     h3 {
@@ -78,6 +96,10 @@
         
         @include breakpoint-up(ipad) {
             padding-bottom: 2rem;
+        }
+
+        @include breakpoint-up(computer) {
+            padding-bottom: 1rem;
         }
     }
 
@@ -101,6 +123,16 @@
                 padding-bottom: 0rem;
             }
         }
+
+        @include breakpoint-up(computer) {
+            &.casestudy {
+                padding-bottom: 2rem;
+            }
+
+            &.last {
+                padding-bottom: 0rem;
+            }
+        }
     }
 
     .description {
@@ -111,12 +143,20 @@
         @include breakpoint-up(ipad) {
             padding-top: 2rem;
         }
+
+        @include breakpoint-up(computer) {
+            padding-top: 0rem;
+        }
     }
 
     h5 {
         @include breakpoint-up(ipad) {
             padding-top: 2rem;
             padding-bottom: 2rem;
+        }
+
+        @include breakpoint-up(computer) {
+            padding-bottom: 0rem;
         }
     }
 }

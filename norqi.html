@@ -56,33 +56,62 @@
         </div>
       </div>
     </nav>
-    <hr> <!--TODO fix hr width-->
+    <hr>
   </div>
   <div class="desktop-nav">
     <nav class="flex flex-jc-sb container--px"> 
-      <h4>
-        <a href="index.html#whatido">Frederikke Mathiesen</a>
-      </h4>
+      <a href=""> <!--TODO smooth scroll til top -->
+        <h4>Frederikke Mathiesen</h4>
+      </a>
       <ul class="flex flex-jc-sb">
         <li>
-          <h4>Home</h4>
+          <h4>
+            <a href="index.html">Home.</a>
+          </h4>
         </li>
         <li>
-          <h4>Who I am.</h4>
+          <h4>
+            <a href="index.html#el">Who I am.</a>
+          </h4>
         </li>
         <li>
-          <h4>What I do.</h4>
+          <h4>
+            <a href="index.html#whatido">What I do.</a>
+          </h4>
         </li>
         <li>
-          <h4>My vision.</h4>
+          <h4>
+            <a href="index.html#myvision">My vision.</a>
+          </h4>
         </li>
         <li>
-          <h4>Contact.</h4>
+          <h4>
+            <a href="index.html#footer">Contact.</a>
+          </h4>
         </li>
       </ul>
     </nav>
     <hr> <!--TODO fix hr width-->
   </div>
+  <nav class="container--px">
+    <ul class="flex flex-ai-c breadcrumbs">
+      <li>
+        <p>
+          <a href="index.html">Home &#8250;</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="index.html#whatido">What I do &#8250;</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="houseofcode.html">Academic project: NORQi</a>
+        </p>
+      </li>
+    </ul>
+  </nav>
   <main class="container--pall projects">
     <h2>NORQi.</h2>
     <p class="description">UI // UX // web design</p>
@@ -129,14 +158,14 @@
     <p><a href="https://frederikkemathiesen.com/modul6/" target="_blank">frederikkemathiesen.com/modul6</a></p>
     <!-- <p><a href="https://www.youtube.com/watch?v=oHhZvgYa4c4&ab_channel=VictorDueholmSehested" target="_blank">bit.ly/HouseofCodepresentationvideo</a></p> -->
   </main>
-  <footer class="container--px">
+  <footer class="container--px" id="footer">
     <h2 class="container--py">Say hi!</h2>
     <p>E-mail:</p>
     <a href="mailto:info.fbmdesign@gmail.com">
       <h4>info.fbmdesign@gmail.com</h4>
     </a>
-    <p class="container--py">Find me on Facebook, LinkedIn, Instagram and Behance as well.</p>
-    <div class="socialicons flex flex-jc-sb flex-ai-c">
+    <p>Find me on Facebook, LinkedIn, Instagram and Behance as well.</p>
+    <div class="socialicons flex flex-jc-fs flex-ai-c">
       <a href="https://www.facebook.com/profile.php?id=100001378864985" target="_blank">
         <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="26.239" height="26.08" viewBox="0 0 26.239 26.08">
           <path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M26.8,13.682A13.119,13.119,0,1,0,11.632,26.642V17.474H8.3V13.682h3.333v-2.89c0-3.288,1.957-5.1,4.955-5.1a20.19,20.19,0,0,1,2.937.256V9.17H17.869a1.9,1.9,0,0,0-2.138,2.049v2.463H19.37l-.582,3.792H15.732v9.168A13.124,13.124,0,0,0,26.8,13.682Z" transform="translate(-0.563 -0.563)"/>
@@ -156,7 +185,7 @@
         <svg class="behance" xmlns="http://www.w3.org/2000/svg" width="24.89" height="24.89" viewBox="0 0 24.89 24.89">
           <path id="Icon_awesome-behance-square" data-name="Icon awesome-behance-square" d="M10.361,16.75c0,1.072-.778,1.411-1.733,1.411H6.122V15.223H8.678C9.711,15.228,10.361,15.656,10.361,16.75Zm-.428-4.572c0-.983-.761-1.217-1.606-1.217h-2.2V13.45H8.5C9.339,13.45,9.934,13.084,9.934,12.178Zm7.35,1.289a1.656,1.656,0,0,0-1.761,1.65h3.456A1.583,1.583,0,0,0,17.284,13.467Zm7.606-8.55V24.473a2.667,2.667,0,0,1-2.667,2.667H2.667A2.667,2.667,0,0,1,0,24.473V4.917A2.667,2.667,0,0,1,2.667,2.25H22.223A2.667,2.667,0,0,1,24.89,4.917ZM15.095,10.75h4.322V9.7H15.095Zm-2.389,6.128a2.762,2.762,0,0,0-1.945-2.867,2.074,2.074,0,0,0,1.456-2.056c0-2.122-1.583-2.639-3.411-2.639H3.778V19.984H8.95C10.889,19.973,12.706,19.045,12.706,16.878Zm8.406-.822c0-2.283-1.339-4.189-3.756-4.189a3.878,3.878,0,0,0-3.95,4.089,3.764,3.764,0,0,0,3.95,4.056,3.445,3.445,0,0,0,3.617-2.6H19.1a1.757,1.757,0,0,1-1.678,1.006,1.743,1.743,0,0,1-1.895-1.961H21.1C21.1,16.328,21.112,16.189,21.112,16.056Z" transform="translate(0 -2.25)"/>
         </svg> 
-      </a>
+     </a>
     </div>
   </footer>
 </body>

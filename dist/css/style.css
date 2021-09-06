@@ -5,7 +5,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Spartan MB", sans-serif;
 }
 
 body {
@@ -53,7 +53,7 @@ h1 {
 
 @media (min-width: 40em) {
   h1 {
-    line-height: 20rem;
+    line-height: 12rem;
   }
 }
 
@@ -143,8 +143,8 @@ h3 {
 
 @media (min-width: 64em) {
   h3 {
-    font-size: 44px;
-    font-size: 4.4rem;
+    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
@@ -181,8 +181,8 @@ h5 {
 
 @media (min-width: 64em) {
   h5 {
-    font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 
@@ -230,6 +230,7 @@ h5 {
 @media (min-width: 64em) {
   .container--py {
     padding-top: 7rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -368,8 +369,18 @@ nav a {
   }
 }
 
+nav .breadcrumbs {
+  column-gap: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 7rem;
+}
+
+nav .breadcrumbs a:hover {
+  color: #146EAA;
+  text-decoration: underline;
+}
+
 hr {
-  width: 87%;
   border: none;
   background-color: #141414;
   height: 0.3em;
@@ -377,14 +388,12 @@ hr {
 
 @media (min-width: 40em) {
   hr {
-    width: 85%;
     height: 0.5rem;
   }
 }
 
 @media (min-width: 64em) {
   hr {
-    width: 88%;
     height: 0.3rem;
   }
 }
@@ -403,12 +412,60 @@ hr {
   }
 }
 
+.hide-for-desktop hr {
+  border: none;
+  background-color: #141414;
+  height: 0.3em;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+@media (min-width: 40em) {
+  .hide-for-desktop hr {
+    height: 0.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 0.3rem;
+  }
+}
+
 .desktop-nav {
   background-color: #fafafa;
   position: fixed;
   width: 100%;
   padding-bottom: 2rem;
   z-index: 1;
+}
+
+.desktop-nav hr {
+  border: none;
+  background-color: #141414;
+  height: 0.3em;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+@media (min-width: 40em) {
+  .desktop-nav hr {
+    height: 0.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .desktop-nav hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 0.3rem;
+  }
 }
 
 .overlay {
@@ -465,7 +522,8 @@ header p {
 
 @media (min-width: 64em) {
   header p {
-    padding-top: 0rem;
+    padding-top: 4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -495,14 +553,14 @@ header .yellowheader {
 
 @media (min-width: 40em) {
   header .yellowheader {
-    height: 62.5rem;
-    margin-top: -54rem;
+    height: 67rem;
+    margin-top: -50rem;
   }
 }
 
 @media (min-width: 64em) {
   header .yellowheader {
-    height: 36rem;
+    height: 40rem;
     margin-top: -29rem;
   }
 }
@@ -604,7 +662,7 @@ main .person {
 
 @media (min-width: 64em) {
   main .person {
-    clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 95%, 0% 20%);
+    clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 94.75%, 0% 20%);
   }
 }
 
@@ -624,7 +682,7 @@ main .vision {
 
 @media (min-width: 64em) {
   main .vision {
-    clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 91.5%, 0% 20%);
+    clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 90.75%, 0% 20%);
   }
 }
 
@@ -637,6 +695,12 @@ main hr {
 @media (min-width: 40em) {
   main hr {
     height: .3rem;
+  }
+}
+
+@media (min-width: 64em) {
+  main hr {
+    margin-top: 1rem;
   }
 }
 
@@ -660,6 +724,12 @@ footer p {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 40em) {
+  footer p:last-of-type {
+    padding-bottom: 2rem;
+  }
+}
+
 @media (min-width: 64em) {
   footer p {
     padding-bottom: 2rem;
@@ -668,6 +738,19 @@ footer p {
 
 footer h4 {
   color: #E63228;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 40em) {
+  footer h4 {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  footer h4 {
+    padding-bottom: 5rem;
+  }
 }
 
 footer div {
@@ -689,12 +772,12 @@ footer div {
 
 footer svg {
   height: 4rem;
-  width: 3rem;
+  width: 2.5rem;
 }
 
 @media (min-width: 40em) {
   footer svg {
-    height: 4rem;
+    height: 3.5rem;
     width: 4rem;
   }
 }
@@ -703,6 +786,10 @@ footer svg {
   footer svg {
     height: 3rem;
   }
+}
+
+.projects {
+  padding: 10rem 30rem 17rem 30rem;
 }
 
 .projects img {
@@ -732,6 +819,12 @@ footer svg {
   }
 }
 
+@media (min-width: 64em) {
+  .projects img {
+    width: 55rem;
+  }
+}
+
 .projects img.animation {
   width: 15rem;
   padding-bottom: 4rem;
@@ -752,6 +845,18 @@ footer svg {
 @media (min-width: 40em) {
   .projects img.animation:last-of-type {
     padding-bottom: 14rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .projects img.animation:last-of-type {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .projects img.animation {
     width: 20rem;
   }
 }
@@ -790,6 +895,12 @@ footer svg {
   }
 }
 
+@media (min-width: 64em) {
+  .projects h2 {
+    padding-top: 0rem;
+  }
+}
+
 .projects h3 {
   padding-top: 4rem;
 }
@@ -797,6 +908,12 @@ footer svg {
 @media (min-width: 40em) {
   .projects h3 {
     padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .projects h3 {
+    padding-bottom: 1rem;
   }
 }
 
@@ -822,6 +939,15 @@ footer svg {
   }
 }
 
+@media (min-width: 64em) {
+  .projects p.casestudy {
+    padding-bottom: 2rem;
+  }
+  .projects p.last {
+    padding-bottom: 0rem;
+  }
+}
+
 .projects .description {
   color: #146EAA;
   padding-bottom: 4rem;
@@ -834,10 +960,22 @@ footer svg {
   }
 }
 
+@media (min-width: 64em) {
+  .projects .description {
+    padding-top: 0rem;
+  }
+}
+
 @media (min-width: 40em) {
   .projects h5 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .projects h5 {
+    padding-bottom: 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
