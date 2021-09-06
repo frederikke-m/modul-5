@@ -1,4 +1,4 @@
-header {
+.hero {
     h1 {
         padding-top: 25rem; 
 
@@ -35,17 +35,17 @@ header {
      
      .yellowheader {
          background-color: $clr-yellow;
-         height: 53rem;
+         height: 65vh;
          z-index: -1;
          margin-top: -44rem;
 
          @include breakpoint-up(ipad) {
-           height: 67rem;
+           height: 65vh;
            margin-top: -50rem; 
         }
 
         @include breakpoint-up(computer) {
-            height: 40rem;
+            height: 75%;
             margin-top: -29rem;
         }
      }

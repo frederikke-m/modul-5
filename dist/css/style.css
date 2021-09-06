@@ -448,24 +448,9 @@ hr {
   border: none;
   background-color: #141414;
   height: 0.3em;
-  margin-left: 2.4rem;
-  margin-right: 2.4rem;
-}
-
-@media (min-width: 40em) {
-  .desktop-nav hr {
-    height: 0.5rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .desktop-nav hr {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    height: 0.3rem;
-  }
+  margin-left: 5rem;
+  margin-right: 5rem;
+  height: 0.3rem;
 }
 
 .overlay {
@@ -478,20 +463,6 @@ hr {
   z-index: -1;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  display: none;
-}
-
-.overlay-content a {
-  color: #146EAA;
-}
-
-.overlay-content a:first-of-type {
-  padding-top: 6rem;
-}
-
 .hidden {
   display: none;
 }
@@ -500,67 +471,67 @@ hr {
   display: block;
 }
 
-header h1 {
+.hero h1 {
   padding-top: 25rem;
 }
 
 @media (min-width: 40em) {
-  header h1 {
+  .hero h1 {
     padding-top: 30rem;
   }
 }
 
 @media (min-width: 64em) {
-  header h1 {
+  .hero h1 {
     padding-top: 20rem;
   }
 }
 
-header p {
+.hero p {
   padding-top: 7rem;
 }
 
 @media (min-width: 64em) {
-  header p {
+  .hero p {
     padding-top: 4rem;
     font-size: 1.4rem;
   }
 }
 
-header .arrowhero {
+.hero .arrowhero {
   padding-top: 15rem;
 }
 
 @media (min-width: 40em) {
-  header .arrowhero {
+  .hero .arrowhero {
     padding-top: 25rem;
   }
 }
 
 @media (min-width: 64em) {
-  header .arrowhero {
+  .hero .arrowhero {
     width: 2rem;
     padding-top: 10rem;
   }
 }
 
-header .yellowheader {
+.hero .yellowheader {
   background-color: #F0C800;
-  height: 53rem;
+  height: 65vh;
   z-index: -1;
   margin-top: -44rem;
 }
 
 @media (min-width: 40em) {
-  header .yellowheader {
-    height: 67rem;
+  .hero .yellowheader {
+    height: 65vh;
     margin-top: -50rem;
   }
 }
 
 @media (min-width: 64em) {
-  header .yellowheader {
-    height: 40rem;
+  .hero .yellowheader {
+    height: 75%;
     margin-top: -29rem;
   }
 }
@@ -589,6 +560,12 @@ main section div p:last-child {
 }
 
 @media (min-width: 40em) {
+  main section div p:last-child {
+    padding-bottom: 10rem;
+  }
+}
+
+@media (min-width: 64em) {
   main section div p:last-child {
     padding-bottom: 7rem;
   }
@@ -789,7 +766,19 @@ footer svg {
 }
 
 .projects {
-  padding: 10rem 30rem 17rem 30rem;
+  padding: 4rem 2.4rem 2rem 2.4rem;
+}
+
+@media (min-width: 40em) {
+  .projects {
+    padding: 10rem 8rem 5rem 8rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .projects {
+    padding: 10rem 30rem 17rem 30rem;
+  }
 }
 
 .projects img {
@@ -977,5 +966,47 @@ footer svg {
   .projects h5 {
     padding-bottom: 0rem;
   }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 99;
+}
+
+.header__menu {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  will-change: height;
+  font-weight: bold;
+}
+
+.header__menu li a {
+  display: inline-block;
+  position: relative;
+  color: #146EAA;
+}
+
+.header__menu h2 {
+  padding-top: 10rem;
+}
+
+.header.open .header__toggle > span {
+  background-color: transparent;
+}
+
+.header.open .header__toggle > span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.header.open .header__toggle > span::after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */

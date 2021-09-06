@@ -16,6 +16,10 @@ main {
                 padding-bottom: 4rem;
 
                 @include breakpoint-up(ipad) {
+                    padding-bottom: 10rem;
+                }
+
+                @include breakpoint-up(computer) {
                     padding-bottom: 7rem;
                 }
             }

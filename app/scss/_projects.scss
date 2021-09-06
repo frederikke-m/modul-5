@@ -1,5 +1,13 @@
 .projects {
-    padding: 10rem 30rem 17rem 30rem;
+    padding: 4rem 2.4rem 2rem 2.4rem;
+
+    @include breakpoint-up(ipad) {
+        padding: 10rem 8rem 5rem 8rem;
+    }
+
+    @include breakpoint-up(computer) {
+        padding: 10rem 30rem 17rem 30rem;
+    }
 
     img {
         width: 27rem;

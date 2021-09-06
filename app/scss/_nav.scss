@@ -96,20 +96,9 @@ hr {
         border: none;
         background-color: $clr-black;
         height: 0.3em;
-        margin-left: 2.4rem;
-        margin-right: 2.4rem;
-        
-        @include breakpoint-up(ipad) {
-            height: 0.5rem;
-            margin-left: 8rem;
-            margin-right: 8rem;
-        }
-        
-        @include breakpoint-up(computer) {
-            margin-left: 5rem;
-            margin-right: 5rem;
-            height: 0.3rem;    
-        }
+        margin-left: 5rem;
+        margin-right: 5rem;
+        height: 0.3rem;    
     }
 }
 
@@ -121,20 +110,6 @@ hr {
     background-color: $clr-white;
     top: 0rem;
     z-index: -1;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    display: none;
-
-    a {
-        color: $clr-blue;
-
-        &:first-of-type {
-            padding-top: 6rem;
-        }
-    }
 }
 
 .hidden {

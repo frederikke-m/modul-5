@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 99;
+  
+    &__menu {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+      will-change: height;
+      font-weight: bold;
+  
+      li {
+        a {
+          display: inline-block;
+          position: relative;
+          color: $clr-blue;
+        }
+      }
+
+      h2 {
+        padding-top: 10rem;
+      }
+    }
+  
+  
+  
+    // Hamburger Open Styles
+    &.open {
+      .header__toggle {
+        > span {
+          background-color: transparent;
+        }
+  
+        > span::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+  
+        > span::after {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+      }
+    }
+  }
