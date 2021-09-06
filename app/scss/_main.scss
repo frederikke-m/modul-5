@@ -6,13 +6,17 @@ main {
             h2, p {
             color: $clr-white;
             padding-top: 2rem;
+
+                @include breakpoint-up(computer) {
+                    padding-top: 0rem;
+                }
             }
     
             p:last-child {
                 padding-bottom: 4rem;
 
                 @include breakpoint-up(ipad) {
-                    padding-bottom: 9rem;
+                    padding-bottom: 7rem;
                 }
             }
     
@@ -30,7 +34,7 @@ main {
             }
 
             @include breakpoint-up(computer) {
-                padding-bottom: 0rem;
+                padding-bottom: 2rem;
             }
         }
 
@@ -41,6 +45,12 @@ main {
             @include breakpoint-up(ipad) {
                 padding-bottom: 2.5rem;
             }
+
+            @include breakpoint-up(computer) {
+                padding-bottom: 0rem;
+            }
+
+            
         }
     }
 
@@ -53,7 +63,7 @@ main {
         padding-bottom: 5rem;
 
         @include breakpoint-up(computer) {
-            width: 35rem;
+            width: 30rem;
             padding-top: 0rem;
         }
     }
@@ -68,6 +78,10 @@ main {
             border-right: 4rem solid #E63228;
             clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 96.75%, 0% 20%);
         }
+
+        @include breakpoint-up(computer) {
+            clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 95%, 0% 20%)
+        }
     }
 
     .vision {
@@ -79,6 +93,10 @@ main {
             border-bottom: 4rem solid #146EAA;
             border-right: 4rem solid #146EAA;
             clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 94.5%, 0% 20%);
+        }
+
+        @include breakpoint-up(computer) {
+            clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 91.5%, 0% 20%);
         }
     }
 

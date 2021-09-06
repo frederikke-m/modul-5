@@ -7,7 +7,7 @@ header {
         }
 
         @include breakpoint-up(computer) {
-            padding-top: 25rem;
+            padding-top: 20rem;
         }
     }
 
@@ -28,7 +28,7 @@ header {
 
         @include breakpoint-up(computer) {
             width: 2rem;
-            padding-top: 15rem;
+            padding-top: 10rem;
         }
      }
      
@@ -44,8 +44,8 @@ header {
         }
 
         @include breakpoint-up(computer) {
-            height: 47.5rem;
-            margin-top: -34rem;
+            height: 36rem;
+            margin-top: -29rem;
         }
      }
 }

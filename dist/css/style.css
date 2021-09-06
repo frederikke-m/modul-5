@@ -40,8 +40,8 @@ p {
 
 @media (min-width: 64em) {
   p {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 
@@ -227,6 +227,12 @@ h5 {
   }
 }
 
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 7rem;
+  }
+}
+
 .container--px {
   padding-right: 2.4rem;
   padding-left: 2.4rem;
@@ -241,8 +247,8 @@ h5 {
 
 @media (min-width: 64em) {
   .container--px {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -289,6 +295,10 @@ h5 {
 
 .flex-ai-st {
   align-items: flex-start;
+}
+
+.flex-jc-fs {
+  justify-content: flex-start;
 }
 
 /* Grid */
@@ -445,7 +455,7 @@ header h1 {
 
 @media (min-width: 64em) {
   header h1 {
-    padding-top: 25rem;
+    padding-top: 20rem;
   }
 }
 
@@ -472,7 +482,7 @@ header .arrowhero {
 @media (min-width: 64em) {
   header .arrowhero {
     width: 2rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
   }
 }
 
@@ -492,8 +502,8 @@ header .yellowheader {
 
 @media (min-width: 64em) {
   header .yellowheader {
-    height: 47.5rem;
-    margin-top: -34rem;
+    height: 36rem;
+    margin-top: -29rem;
   }
 }
 
@@ -510,13 +520,19 @@ main section div h2, main section div p {
   padding-top: 2rem;
 }
 
+@media (min-width: 64em) {
+  main section div h2, main section div p {
+    padding-top: 0rem;
+  }
+}
+
 main section div p:last-child {
   padding-bottom: 4rem;
 }
 
 @media (min-width: 40em) {
   main section div p:last-child {
-    padding-bottom: 9rem;
+    padding-bottom: 7rem;
   }
 }
 
@@ -535,7 +551,7 @@ main section h4 {
 
 @media (min-width: 64em) {
   main section h4 {
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -550,6 +566,12 @@ main section p {
   }
 }
 
+@media (min-width: 64em) {
+  main section p {
+    padding-bottom: 0rem;
+  }
+}
+
 main img {
   width: 40rem;
   display: block;
@@ -561,7 +583,7 @@ main img {
 
 @media (min-width: 64em) {
   main img {
-    width: 35rem;
+    width: 30rem;
     padding-top: 0rem;
   }
 }
@@ -580,6 +602,12 @@ main .person {
   }
 }
 
+@media (min-width: 64em) {
+  main .person {
+    clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 95%, 0% 20%);
+  }
+}
+
 main .vision {
   border-bottom: 2rem solid #146EAA;
   border-right: 2rem solid #146EAA;
@@ -591,6 +619,12 @@ main .vision {
     border-bottom: 4rem solid #146EAA;
     border-right: 4rem solid #146EAA;
     clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 94.5%, 0% 20%);
+  }
+}
+
+@media (min-width: 64em) {
+  main .vision {
+    clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 91.5%, 0% 20%);
   }
 }
 
@@ -638,6 +672,19 @@ footer h4 {
 
 footer div {
   width: 50%;
+  column-gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  footer div {
+    column-gap: 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  footer div {
+    column-gap: 3rem;
+  }
 }
 
 footer svg {
@@ -649,6 +696,12 @@ footer svg {
   footer svg {
     height: 4rem;
     width: 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  footer svg {
+    height: 3rem;
   }
 }
 

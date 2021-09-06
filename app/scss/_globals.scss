@@ -184,6 +184,10 @@ h5 {
           padding-top: 10rem;
           padding-bottom: 5rem;
         }
+
+        @include breakpoint-up(computer) {
+          padding-top: 7rem;
+        }
       }
     
       &--px {
@@ -196,8 +200,8 @@ h5 {
         }
     
         @include breakpoint-up(computer) {
-          padding-left: 7rem;
-          padding-right: 7rem;
+          padding-left: 5rem;
+          padding-right: 5rem;
         }
       }
     
@@ -238,6 +242,10 @@ h5 {
   
     &-ai-st {
       align-items: flex-start;
+    }
+
+    &-jc-fs {
+      justify-content: flex-start;
     }
   }
 
