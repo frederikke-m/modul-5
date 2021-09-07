@@ -7,7 +7,7 @@
         }
 
         @include breakpoint-up(computer) {
-            padding-top: 20rem;
+            padding-top: 25rem;
         }
     }
 
@@ -21,7 +21,7 @@
     }  
      
      .arrowhero {
-         padding-top: 15rem;
+         padding-top: 10rem;
 
          @include breakpoint-up(ipad) {
             padding-top: 25rem;
@@ -34,10 +34,10 @@
      }
      
      .yellowheader {
-         background-color: $clr-yellow;
-         height: 65vh;
+         background-color: $clr-blue;
+         height: 60vh;
          z-index: -1;
-         margin-top: -44rem;
+         margin-top: -30rem;
 
          @include breakpoint-up(ipad) {
            height: 65vh;

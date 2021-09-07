@@ -1,18 +1,27 @@
 /* Generel */ 
 @font-face {
-  font-family: 'League Spartan';
-  src: url('fonts/LeagueSpartan-Bold.otf');
+  font-family: "league_spartanbold";
+  src: url('https://frederikkemathiesen.com/fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+       url('https://frederikkemathiesen.com/fonts/leaguespartan-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 @font-face {
-  font-family: 'Spartan MB';
-  src: url('fonts/SpartanMB-Regular.otf');
+  font-family: "spartan_mbregular";
+  src: url('https://frederikkemathiesen.com/fonts/spartanmb-regular-webfont.woff2') format('woff2'),
+       url('https://frederikkemathiesen.com/fonts/spartanmb-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
 
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
-    font-family: "Spartan MB", sans-serif;
+    font-family: "spartan_mbregular", sans-serif;
 
 }
 
@@ -32,7 +41,7 @@ a {
 }
 
 p {
-    font-family: "Spartan MB", sans-serif;
+    font-family: "spartan_mbregular", sans-serif;
     font-size: $font-p-iphone-fallback;
     font-size: $font-p-iphone;
     line-height: 2rem;
@@ -50,7 +59,7 @@ p {
 }
 
 h1 {
-    font-family: 'League Spartan', sans-serif;
+    font-family: "league_spartanbold", sans-serif;
     letter-spacing: 2.7;
     line-height: 8rem;
 
@@ -60,7 +69,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "league_spartanbold", sans-serif;
   letter-spacing: 2.7;
   line-height: 4.5rem;
 
@@ -70,7 +79,7 @@ h2 {
 }
 
 h3, h5 {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "league_spartanbold", sans-serif;
   letter-spacing: 2.7;
   line-height: 4.5rem;
 
@@ -80,7 +89,7 @@ h3, h5 {
 }
 
 h4 {
-    font-family: "Spartan MB", sans-serif;
+    font-family: "spartan_mbregular", sans-serif;
     
     @include breakpoint-up(computer) {
       line-height: 0rem;
@@ -241,7 +250,6 @@ h5 {
     }
     &-jc-sb {
       justify-content: space-between;
-      column-gap: 3rem;
     }
   
     &-jc-c {

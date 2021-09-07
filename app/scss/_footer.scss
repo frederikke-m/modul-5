@@ -37,28 +37,22 @@ footer {
 
     div {
         width: 50%;
-        column-gap: 3rem;
-
-        @include breakpoint-up(ipad) {
-            column-gap: 4rem;
-        }
-
-        @include breakpoint-up(computer) {
-            column-gap: 3rem;
-        }
     }
 
     svg {
         height: 4rem;
         width: 2.5rem;
+        padding-right: 3rem;
 
         @include breakpoint-up(ipad) {
             height: 3.5rem;
             width: 4rem;
+            padding-right: 4rem;
         }
 
         @include breakpoint-up(computer) {
             height: 3rem;
+            padding-right: 3rem;
         }
     }
 
