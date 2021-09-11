@@ -535,6 +535,10 @@ hr {
   display: block;
 }
 
+.active {
+  color: #146EAA;
+}
+
 .hero h1 {
   padding-top: 25rem;
 }
