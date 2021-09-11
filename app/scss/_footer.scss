@@ -1,60 +1,73 @@
 footer {
     background-color: $clr-yellow;
-    padding-bottom: 10rem;
-
-    h2 {
-        padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    
+    @include breakpoint-up(ipad) {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-bottom: 10rem;
+    }
+    
+    @include breakpoint-up(computer) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    @include breakpoint-up(largeComputer) {
+        padding-left: 20rem;
+        padding-right: 20rem;
     }
 
+    
     p {
         color: $clr-blue;
         padding-top: 2rem;
         padding-bottom: 1rem;
-
+        
         &:last-of-type {
             @include breakpoint-up(ipad) {
                 padding-bottom: 2rem;
             }
         }
-
+        
         @include breakpoint-up(computer) {
             padding-bottom: 2rem;
         }
     }
-
+    
     h4 {
         color: $clr-red;
         padding-bottom: 3rem;
-
+        
         @include breakpoint-up(ipad) {
             padding-bottom: 4rem;
         }
-
+        
         @include breakpoint-up(computer) {
             padding-bottom: 5rem;
         }
     }
-
+    
     div {
         width: 50%;
     }
-
+    
     svg {
         height: 4rem;
         width: 2.5rem;
         padding-right: 3rem;
-
+        
         @include breakpoint-up(ipad) {
             height: 3.5rem;
             width: 4rem;
             padding-right: 4rem;
         }
-
+        
         @include breakpoint-up(computer) {
             height: 3rem;
             padding-right: 3rem;
         }
     }
-
-
 }

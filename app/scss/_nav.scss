@@ -1,4 +1,15 @@
 nav {
+    @include breakpoint-up(computer) {
+        padding-top: 3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;   
+    }
+
+    @include breakpoint-up(largeComputer) {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
     a {
         padding-top: 3rem;
         padding-bottom: 2rem;
@@ -13,12 +24,6 @@ nav {
             padding-bottom: 3rem;
         } 
     }
-    
-    @include breakpoint-up(computer) {
-        padding-top: 3rem;
-        padding-left: 6rem;
-        padding-right: 6rem;   
-    }
 
     h2 {
         @include breakpoint-up(ipad) {
@@ -30,13 +35,18 @@ nav {
     .breadcrumbs {
         padding-bottom: 0rem;
         padding-top: 10rem;
+        padding-left: 2.4rem;
 
         @include breakpoint-up(ipad) {
             padding-top: 14rem;
+            padding-left: 8rem;
+            padding-right: 8rem;
         }
 
         @include breakpoint-up(computer) {
             padding-top: 7rem;
+            padding-left: 0rem;
+            padding-right: 0rem;
         }
 
         a:hover {
@@ -45,22 +55,12 @@ nav {
         }
 
         a {
-            padding-right: 1rem;
-        }
-    }
-}
+            padding-right: 0.5rem;
 
-hr {
-    border: none;
-    background-color: $clr-black;
-    height: 0.3em;
-    
-    @include breakpoint-up(ipad) {
-        height: 0.5rem;
-    }
-    
-    @include breakpoint-up(computer) {
-        height: 0.3rem;    
+            @include breakpoint-up(ipad) {
+                padding-right: 1rem;
+            }
+        }
     }
 }
 
@@ -96,6 +96,21 @@ hr {
     }
 }
 
+hr {
+    border: none;
+    background-color: $clr-black;
+    height: 0.3em;
+    
+    @include breakpoint-up(ipad) {
+        height: 0.5rem;
+    }
+    
+    @include breakpoint-up(computer) {
+        height: 0.3rem;    
+    }
+}
+
+
 .desktop-nav {
     background-color: $clr-white;
     position: fixed;
@@ -106,14 +121,22 @@ hr {
     hr {
         border: none;
         background-color: $clr-black;
-        height: 0.3em;
         margin-left: 5rem;
         margin-right: 5rem;
         height: 0.3rem;    
+
+        @include breakpoint-up(largeComputer) {
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
     }
 
     li {
         padding-right: 3rem;
+
+        a:hover {
+            color: $clr-blue;
+        }
 
         &:last-of-type {
             padding-right: 0rem;
