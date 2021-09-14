@@ -75,7 +75,7 @@ main {
     .person {
         border-bottom: 2rem solid #E63228;
         border-right: 2rem solid #E63228;
-        clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.25%, 0% 20%);
+        clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 94.75%, 0% 20%);
 
         @include breakpoint-up(ipad) {
             border-bottom: 4rem solid #E63228;
@@ -84,14 +84,18 @@ main {
         }
 
         @include breakpoint-up(computer) {
-            clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 94.75%, 0% 20%)
+            clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 95.25%, 0% 20%)
+        }
+
+        @include breakpoint-up(largeComputer) {
+            clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 95%, 0% 20%);
         }
     }
 
     .vision {
         border-bottom: 2rem solid $clr-blue;
         border-right: 2rem solid $clr-blue;
-        clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 95.5%, 0% 20%);
+        clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 94.25%, 0% 20%);
 
         @include breakpoint-up(ipad) {
             border-bottom: 4rem solid #146EAA;
@@ -100,7 +104,11 @@ main {
         }
 
         @include breakpoint-up(computer) {
-            clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 90.75%, 0% 20%);
+            clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 10% 100%, 0% 90%, 0% 20%);
+        }
+
+        @include breakpoint-up(largeComputer) {
+            clip-path: polygon(0 0, 94% 0%, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0% 90.75%, 0% 20%);
         }
     }
 
@@ -115,6 +123,7 @@ main {
 
         @include breakpoint-up(computer) {
             margin-top: 1rem;
+            height: 0.15rem
         }
     }
 

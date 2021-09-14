@@ -19,7 +19,6 @@
 
 
 html {
-    scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: "spartan_mbregular", sans-serif;
 
@@ -193,6 +192,11 @@ h5 {
         @include breakpoint-up(computer) {
           padding-left: 30rem;
           padding-right: 30rem;
+        }
+
+        @include breakpoint-up(largeComputer) {
+          padding-left: 40rem;
+          padding-right: 40rem;
         }
       }
     

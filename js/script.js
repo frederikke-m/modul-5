@@ -53,35 +53,5 @@ window.addEventListener("scroll", changeLinkState);
 
 //Smooth scroll – virker ikke? :(
 
-const arrowHero = document.querySelector(".arrowhero")
-
-let scrollY = 0;
-let distance = 10;
-let speed = 0.4;
-
-function autoScrollTo(el) {
-  let currentY = window.pageYOffset;
-  let targetY = document.getElementById(el);
-  let bodyHeight = document.body.offsetHeight;
-  let yPos = currentY + window.innerHeight;
-  let animator = setTimeout('autoScrollTo(\'' + el + '\')', speed);
-
-  if (yPos > bodyHeight) {
-    clearTimeout(animator);
-  }
-
-  else {
-    if (currentY < targetY - distance) {
-      scrollY = currentY + distance;
-      window.scroll(0, scrollY);
-    }
-
-    else {
-      clearTimeout(animator);
-    }
-  }
-}
-
-arrowHero.addEventListener("click", autoScrollTo)
 
 
